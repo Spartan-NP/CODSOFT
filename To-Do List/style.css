@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text&family=Josefin+Sans&family=Kalam&family=Lexend&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat&family=Crimson+Text&family=Dancing+Script:wght@400;500;600;700&family=Exo+2&family=Josefin+Sans:ital,wght@0,400;1,700&family=Kalam&family=Lexend&family=Piazzolla:wght@200;300;400;900&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgb(0, 0, 0) 10%, transparent),
+    url(/images/hacking.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 40px;
+  color: white;
+  font-family: "Dancing Script", Poppins, cursive, sans-serif;
+  text-shadow: 0px 0px 10px blue;
+}
+.container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+}
+
+h1 {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  text-shadow: 0px 0px 10px blue;
+  background-color: rgb(41, 41, 104);
+  border-radius: 20px 20px 0px 0px;
+  letter-spacing: 2px;
+}
+.todobox {
+  width: 400px;
+  min-height: 350px;
+  max-height: fit-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 10px;
+}
+.input input {
+  height: 100%;
+  margin-right: 20px;
+  padding: 0px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#addbtn {
+  width: fit-content;
+  height: 100%;
+  font-size: 15px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 5px;
+  background-color: rgb(41, 41, 104);
+  text-shadow: 0px 0px 10px blue;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+.list {
+  margin: 10px 0px;
+  padding: 0px 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#records {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#records div {
+  display: flex;
+  margin-top: 10px;
+}
+#records div i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+#records li {
+  width: 300px;
+  margin: auto 0px;
+  text-transform: capitalize;
+}
+
+#records div i:first-child {
+  color: white;
+  border: none;
+  background-color: rgb(200, 73, 73);
+}
+#records div i:active {
+  transform: scale(0.9);
+}
+
+#records div li + i {
+  background-color: rgb(23, 148, 198);
+  color: white;
+  border: none;
+}
+
+#addbtn:active {
+  transform: scale(0.9);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 420px) {
+  .todobox {
+    width: 330px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  #addbtn {
+    font-size: 14px;
+  }
+  #records {
+    width: 100%;
+  }
+  #records div i {
+    width: 40px;
+    font-size: 15px;
+  }
+  #records li {
+    font-size: 14px;
+  }
+}
