@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat&family=Crimson+Text&family=Dancing+Script:wght@400;500;600;700&family=Exo+2&family=Josefin+Sans:ital,wght@0,400;1,700&family=Kalam&family=Lexend&family=Piazzolla:wght@200;300;400;900&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat&family=Crimson+Text&family=Dancing+Script:wght@400;500;600;700&family=Exo+2&family=Josefin+Sans:ital,wght@0,400;1,700&family=Kalam&family=Lexend&family=Piazzolla:wght@200;300;400;900&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(208, 205, 205);
+}
+
+/* navbar---------------------------------------------------------------- */
+
+.homeSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 254, 255);
+  background-image: radial-gradient(transparent, black 100%),
+    url(/images/hourcoding.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+#navbar {
+  display: flex;
+  list-style: none;
+  margin-right: 60px;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar li a {
+  text-decoration: none;
+  color: rgb(255, 252, 252);
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+.navSection h3 {
+  height: 100%;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  margin-left: 60px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+#navcheck{
+  display: none;
+}
+#navcheckbtn{
+  height: 60px;
+  width: 60px;
+  color: white;
+  font-size: 25px;
+  line-height: 60px;
+  display: none;
+
+}
+
+/* home---------------------------------------------------------------- */
+
+.home {
+  margin: 0px 60px;
+  height: 80%;
+}
+.homeText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homeText h1 {
+  letter-spacing: 2px;
+  word-spacing: 7px;
+  color: rgb(79, 162, 240);
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+.homeText p {
+  margin: 40px 0px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 18px;
+  word-spacing: 3px;
+  color: rgb(255, 252, 252);
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: rgb(76, 65, 127);
+  color: white;
+  box-shadow: 0px 0px 10px blue;
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+/* about ....................................................................*/
+
+#about {
+  background-color: #ffffff;
+  margin-top: 10px;
+  width: 100%;
+  height: 650px;
+  background-image: radial-gradient(transparent, black 120%),
+    url(/images/3409297.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.aboutSection {
+  display: flex;
+  margin: 0px 60px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#check {
+  display: none;
+}
+.content {
+  display: none;
+}
+.aboutText p,
+.content p {
+  width: 100%;
+  line-height: 25px;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+.aboutText label {
+  margin-top: 25px;
+  text-decoration: underline;
+  color: rgb(255, 252, 252);
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+  text-transform: capitalize;
+}
+.aboutText {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0px;
+  margin-left: 300px;
+}
+.aboutText h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: rgb(255, 252, 252);
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+#check:checked ~ .content {
+  display: block;
+
+}
+
+/* skill ......................................................................*/
+
+#skill {
+  background-color: #ffffff;
+  margin-top: 10px;
+  width: 100%;
+  height: 650px;
+  background-image: radial-gradient(transparent, black 120%),
+    url(/images/coding.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.skillSection {
+  display: flex;
+  margin: 0px 60px;
+  height: 100%;
+  align-items: center;
+}
+.skills {
+  width: 100%;
+  height: 100%;
+}
+.skillPart {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0px;
+}
+.skillHeading {
+  padding: 20px 0px;
+  text-align: center;
+}
+.skillHeading h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+.skillHeading p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgb(250, 250, 250);
+  word-spacing: 10px;
+}
+.skillPart h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+/* projects .................................................................................*/
+
+#project {
+  background-color: #ffffff;
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  background-image: radial-gradient(transparent, black 170%),
+    url(/images/hacking.jpg);
+  background-size: contain;
+  background-position: center;
+}
+.projectSection {
+  text-align: center;
+}
+.projectSection h1 {
+  padding: 40px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+.projectList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.projectList div {
+  width: 44%;
+  height: 250px;
+  border: 1px solid blue;
+  box-shadow: 0px 0px 10px blue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #121e3f;
+  background-image: radial-gradient(transparent, black 180%);
+}
+
+.projectList div h2 {
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+.projectList div p {
+  font-size: 17px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 15px;
+  color: white;
+}
+
+.projectList div a {
+  font-size: 18px;
+  margin-right: 20px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+.projectList div p span {
+  color: rgb(225, 225, 231);
+  text-decoration: underline;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+/* Resume ....................................................................*/
+
+#Resume {
+  background-color: #1f2c56;
+  margin-top: 10px;
+  width: 100%;
+  height: 650px;
+  background-image: radial-gradient(transparent, black 120%),
+    url(/images/resumesection.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.resumeSection {
+  width: 900px;
+  height: 150px;
+}
+
+.resumeSection h1 {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+  letter-spacing: 2px;
+  text-align: center;
+}
+.resumeSection p {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 23px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+.resumeSection p a {
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+/* contact ....................................................................*/
+#contact {
+  background-image: radial-gradient(transparent, black 80%),
+    url(images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+  width: 100%;
+  height: 650px;
+}
+
+.contactSection {
+  display: flex;
+  width: 100%;
+}
+.contactDetails {
+  width: 50%;
+  height: 600px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactDetails h1 {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+.contactDetails p {
+  margin: 10px 0px;
+  font-size: 17px;
+  color: gray;
+  color: #ffffff;
+}
+.contactDetails p span {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+.myImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.myImg div {
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgb(48, 56, 136);
+  box-shadow: 0px 0px 10px blue;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.myImg div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer ....................................................................*/
+
+#footer {
+  background-color: #ffffff;
+  margin-top: 10px;
+  width: 100%;
+  height: 97%;
+}
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(transparent, black 120%),
+    linear-gradient(to right, gray, #1f2c56, gray);
+  padding: 15px 0px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 0, 255);
+}
+
+/* animation----------------------------------------------------------- */
+.btn:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transform: scale(1.1);
+}
+
+.navBarItem:hover , .navBarItem.active{
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* mobile device -------------------------------------------------------*/
+
+@media screen and (max-width: 376px) {
+  .homeSection {
+    background-position: right;
+    background-image: radial-gradient(transparent, black 120%),
+      url(/images/hourcoding.jpg);
+  }
+
+  #navbar{
+    position: absolute;
+    top: 60px;
+    display: block;
+    text-align: center;
+    background-color: rgba(67, 67, 67,1);
+    line-height: 80px;
+    right: -100%;
+    width: 50%;
+    margin: 0;
+    border-radius: 10px 0px 0px 10px;
+    transition: all .5s;
+  }
+  #navcheck:Checked ~ #navbar{
+    right: 0px;
+    
+  }
+  #navcheckbtn{
+    display: block;
+
+  }
+  
+  .navSection h3 {
+    font-size: 18px;
+    width: 190px;
+    margin: 0px;
+  }
+  .home {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+  .homeText h1 {
+    font-size: 22px;
+    width: 250px;
+    margin-top: 20px;
+  }
+  .homeText p {
+    font-size: 16px;
+    width: 330px;
+    line-height: 22px;
+  }
+  .btnpart {
+    width: 330px;
+    text-align: center;
+  }
+
+  /* about: ---------------------------------------------;? */
+  #about {
+    background-position: left;
+    background-image: radial-gradient(transparent, black 100%),
+      url(/images/hourcoding.jpg);
+  }
+  .aboutSection {
+    margin: 0;
+  }
+  .aboutText {
+    margin: 0px;
+    width: 100%;
+    padding: 10px;
+  }
+  .aboutText h1 {
+    font-size: 20px;
+  }
+  .aboutText p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .aboutText label {
+    font-size: 13px;
+  }
+
+  /* skills---------------------------------------------- */
+  #skill {
+    background-position: center;
+    background-image: radial-gradient(transparent, black 100%),
+      url(/images/3409297.jpg);
+  }
+  .skillSection {
+    margin: 0;
+  }
+  .skillPart {
+    width: 100%;
+  }
+  .skillPart h1 {
+    font-size: 22px;
+  }
+  .skillHeading h3 {
+    font-size: 17px;
+  }
+  .skillHeading p {
+    font-size: 15px;
+  }
+
+  /* project: ----------------------------------------------------- */
+  .projectSection h1 {
+    font-size: 20px;
+  }
+  .projectList {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .projectList div {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+  .projectList div h2 {
+    font-size: 17px;
+  }
+  .projectList div p,
+  .projectList div a {
+    font-size: 15px;
+  }
+
+  /* resume: ---------------------------------------------------- */
+  .resumeSection {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .resumeSection h1 {
+    font-size: 20px;
+  }
+  .resumeSection p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .resumeSection p a {
+    font-size: 13px;
+  }
+
+  /* contact details---------------------------------------- */
+  #contact {
+    background-image: radial-gradient(transparent, black 120%),
+      url(images/contact.jpg);
+  }
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactDetails {
+    width: 90%;
+    height: 410px;
+    margin: 0;
+    padding: 0;
+  }
+  .contactDetails h1 {
+    font-size: 20px;
+  }
+  .contactDetails p {
+    font-size: 15px;
+  }
+  .contactDetails p span {
+    font-size: 17px;
+  }
+  .myImg {
+    width: 200px;
+    height: 200px;
+  }
+  .myImg div {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* footer----------------------------------------- */
+  .footerSection p {
+    font-size: 13px;
+  }
+}
